@@ -14,8 +14,7 @@ struct trie {
 
 trie* getnode() {
 	trie *temp = new trie;
-	temp->val = 0;
-	temp->cnt = 0;
+	temp->val = temp->cnt = 0;;
 	temp->child[0] = temp->child[1] = NULL;
 	return temp;
 }
