@@ -13,7 +13,7 @@ struct trie {
 };
 
 trie* getnode() {
-	trie *temp = new trie;
+	trie *temp = (struct trie*)malloc(sizeof(struct trie));
 	temp->val = temp->cnt = 0;;
 	temp->child[0] = temp->child[1] = NULL;
 	return temp;
